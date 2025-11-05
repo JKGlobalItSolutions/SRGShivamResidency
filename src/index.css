@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 215 85% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 20% 96%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 215 15% 97%;
+    --muted-foreground: 215 10% 45%;
+
+    --accent: 215 85% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 15% 92%;
+    --input: 215 15% 92%;
+    --ring: 215 85% 55%;
+
+    --radius: 0.5rem;
+
+    /* Modern minimalist design tokens */
+    --blue-light: 215 20% 96%;
+    --blue-medium: 215 85% 55%;
+    --blue-dark: 215 80% 35%;
+    --blue-accent: 215 85% 65%;
+
+    --gradient-hero: linear-gradient(180deg, hsl(215 20% 96%), hsl(0 0% 100%));
+    --gradient-accent: linear-gradient(135deg, hsl(215 85% 55%), hsl(215 80% 45%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(215 20% 98%));
+
+    --shadow-soft: 0 2px 12px hsl(215 85% 55% / 0.08);
+    --shadow-medium: 0 4px 24px hsl(215 85% 55% / 0.12);
+    --shadow-elegant: 0 8px 32px hsl(215 85% 55% / 0.15);
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
