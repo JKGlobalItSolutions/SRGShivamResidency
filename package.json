@@ -1,8 +1,8 @@
 {
-  "name": "SRG_Residency_site",
+  "name": "SRGShivamResidency",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://JKGlobalItSolutions.github.io/SRG_Residency_site",
+  "homepage": "https://JKGlobalItSolutions.github.io/SRGShivamResidency",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r git@github.com:JKGlobalItSolutions/SRG_Residency_site.git"
+    "deploy": "gh-pages -d dist -r git@github.com:JKGlobalItSolutions/SRGShivamResidency.git"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
