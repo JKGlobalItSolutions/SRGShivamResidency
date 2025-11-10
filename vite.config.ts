@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
-   base: '/SRG_Residency_site/',
+   base: '/SRGShivamResidency/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
