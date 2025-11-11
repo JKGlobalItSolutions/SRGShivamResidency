@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+
 import {
   Select,
   SelectContent,
@@ -15,6 +16,7 @@ import { toast } from "sonner";
 import { rooms } from "../data/hotel-data";
 // import { PaymentSection } from "./PaymentSection";
 import { sendBookingEmail, BookingEmailData } from "../lib/emailjs";
+import { PaymentSection } from "@/components/PaymentSection";
 
 const BookingForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -468,6 +470,7 @@ const BookingForm = () => {
                       <span className="text-primary">₹{bookingSummary.total}</span>
                     </div>
                   </div>
+                  <PaymentSection/>
                 </CardContent>
               </Card>
             </div>

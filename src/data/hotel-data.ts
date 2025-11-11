@@ -36,6 +36,7 @@ export const rooms: Room[] = [
     id: "standard-room",
     title: "Standard Room",
     price: 299,
+    
     size: "35 m²",
     maxGuests: 2,
     bedType: "Queen Bed",
