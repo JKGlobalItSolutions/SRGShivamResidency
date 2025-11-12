@@ -12,7 +12,7 @@ const Navigation = () => {
     { name: "About", path: "/about" },
     { name: "Rooms", path: "/rooms" },
     { name: "Facilities", path: "/facilities" },
-    { name: "Book Now", path: "https://srg-shivam-residency.netlify.app/" },
+    // { name: "Book Now", path: "https://srg-shivam-residency.netlify.app/" },
     { name: "Gallery", path: "/testimonials" },
     { name: "Contact", path: "/contact" },
   ];
