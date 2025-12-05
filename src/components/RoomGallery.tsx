@@ -42,13 +42,12 @@ const RoomGallery = () => {
                   </span>
                 </div>
                 <p className="text-muted-foreground mb-4">{room.description.substring(0, 100)}...</p>
-                <Link to="/booking">
-                  <Button 
-                    className="w-full bg-primary hover:bg-primary/90 text-white transition-smooth"
-                  >
-                    Book Now
-                  </Button>
-                </Link>
+                <Button
+  onClick={() => window.open("https://jkglobalitsolutions.github.io/SRGShivamResidency-website-dynamic-link/", "_blank")}
+  className="w-full bg-primary hover:bg-primary/90 text-white transition-smooth"
+>
+  Book Now
+</Button>
               </CardContent>
             </Card>
           ))}

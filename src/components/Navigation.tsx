@@ -12,7 +12,6 @@ const Navigation = () => {
     { name: "About", path: "/about" },
     { name: "Rooms", path: "/rooms" },
     { name: "Facilities", path: "/facilities" },
-    // { name: "Book Now", path: "https://srg-shivam-residency.netlify.app/" },
     { name: "Gallery", path: "/testimonials" },
     { name: "Contact", path: "/contact" },
   ];
@@ -28,17 +27,28 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <Link key={item.path} to={item.path}>
-                <Button
-                  variant={isActive(item.path) ? "default" : "ghost"}
-                  className="transition-smooth"
-                >
-                  {item.name}
-                </Button>
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center gap-4">
+            <div className="flex items-center space-x-1">
+              {navItems.map((item) => (
+                <Link key={item.path} to={item.path}>
+                  <Button
+                    variant={isActive(item.path) ? "default" : "ghost"}
+                    className="transition-smooth"
+                  >
+                    {item.name}
+                  </Button>
+                </Link>
+              ))}
+            </div>
+            <a
+              href="https://jkglobalitsolutions.github.io/SRGShivamResidency-website-dynamic-link/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="default" className="transition-smooth">
+                Book Now
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,6 +73,16 @@ const Navigation = () => {
                 </Button>
               </Link>
             ))}
+            <a
+              href="https://jkglobalitsolutions.github.io/SRGShivamResidency-website-dynamic-link/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+            >
+              <Button variant="default" className="w-full justify-start transition-smooth">
+                Book Now
+              </Button>
+            </a>
           </div>
         )}
       </div>
